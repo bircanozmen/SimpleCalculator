@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:hint="Enter a number"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:hint="Enter a number"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editText2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/purple_500"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:onClick="mySum"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editText2"
+        android:layout_toEndOf="@id/button1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="-"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:onClick="mySub"
+        android:layout_toRightOf="@id/button1" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editText2"
+        android:layout_toEndOf="@id/button2"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="*"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        android:onClick="myMultiply"
+        android:layout_toRightOf="@id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editText2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/button3"
+        android:background="@color/purple_500"
+        android:text="/"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:onClick="myDiv"
+        android:layout_toRightOf="@id/button3" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:hint="Result"
+        android:textSize="36dp" />
+
+
+
+</RelativeLayout>
